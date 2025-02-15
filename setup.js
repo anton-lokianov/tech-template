@@ -14,7 +14,6 @@ if (!fs.existsSync("package.json")) {
 }
 
 async function setup() {
-  // Reinitialize git repository first
   reinitializeGit();
 
   installDependencies();
@@ -23,7 +22,7 @@ async function setup() {
     "Do you want to install framer-motion? [y/N] "
   );
   if (installFramer.toLowerCase() === "y") {
-    installPackage("framer-motion", "npm install framer-motion");
+    installPackage("framer-motion", "npm install motion");
   }
 
   const installZustand = await question(
@@ -37,7 +36,7 @@ async function setup() {
     "Do you want to install shadcn UI? [y/N] "
   );
   if (installShadcn.toLowerCase() === "y") {
-    installPackage("shadcn UI", "npx shadcn-ui@latest init");
+    installPackage("shadcn UI", "npx shadcn@latest init");
   }
 
   console.log("Setup complete!");

@@ -30,10 +30,6 @@ export const reinitializeGit = () => {
     // Initialize new git repository
     execSync("git init", { stdio: "inherit" });
 
-    // Create initial commit
-    execSync("git add .", { stdio: "inherit" });
-    execSync('git commit -m "Initial commit"', { stdio: "inherit" });
-
     console.log("✅ Git repository has been reinitialized");
   } catch (error) {
     console.error("Failed to reinitialize Git repository:", error);
