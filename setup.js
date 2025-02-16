@@ -19,21 +19,21 @@ async function setup() {
   installDependencies();
 
   const installFramer = await question(
-    "Do you want to install framer-motion? [y/N] "
+    "Do you want to install framer-motion? [Y/N] "
   );
   if (installFramer.toLowerCase() === "y") {
     installPackage("framer-motion", "npm install motion");
   }
 
   const installZustand = await question(
-    "Do you want to install zustand? [y/N] "
+    "Do you want to install zustand? [Y/N] "
   );
   if (installZustand.toLowerCase() === "y") {
     installPackage("zustand", "npm install zustand");
   }
 
   const installShadcn = await question(
-    "Do you want to install shadcn UI? [y/N] "
+    "Do you want to install shadcn UI? [Y/N] "
   );
   if (installShadcn.toLowerCase() === "y") {
     installPackage("shadcn UI", "npx shadcn@latest init");
