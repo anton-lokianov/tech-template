@@ -73,7 +73,7 @@ Welcome to the **AL Tech Stack Template**! This repository serves as a starter t
 
    ```bash
    git clone https://github.com/anton-lokianov/AL-tech-template.git
-   cd the repo
+   cd AL-tech-template
    ```
 
 2. **Run the Interactive Setup**
